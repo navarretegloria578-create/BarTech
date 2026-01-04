@@ -1,0 +1,145 @@
+INDEX:       <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BarTech | Menú</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍻 BarTech</h1>
+    <p>Menú digital • Selecciona tus productos</p>
+</header>
+
+<!-- PEDIDO FLOTANTE -->
+<aside class="pedido">
+    <h2>🧾 Pedido</h2>
+    <ul id="pedido"></ul>
+    <hr>
+    <h3>Total: $<span id="total">0</span> MXN</h3>
+    <button class="enviar" onclick="enviarPedido()">Enviar pedido</button>
+</aside>
+
+<main>
+
+    <!-- CERVEZAS -->
+    <section>
+        <h2>🍺 Cervezas</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <h3>Corona</h3>
+                <p>Botella 355 ml</p>
+                <span>$45 MXN</span>
+                <button onclick="agregarPedido('Corona 355 ml',45)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <h3>Victoria</h3>
+                <p>Botella 355 ml</p>
+                <span>$40 MXN</span>
+                <button onclick="agregarPedido('Victoria 355 ml',40)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <h3>Caguama Victoria</h3>
+                <p>940 ml</p>
+                <span>$90 MXN</span>
+                <button onclick="agregarPedido('Caguama Victoria 940 ml',90)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <h3>Caguama Indio</h3>
+                <p>940 ml</p>
+                <span>$95 MXN</span>
+                <button onclick="agregarPedido('Caguama Indio 940 ml',95)">Agregar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MICHELADAS -->
+    <section>
+        <h2>🍹 Micheladas</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <h3>Michelada Clásica</h3>
+                <p>1 L</p>
+                <span>$80 MXN</span>
+                <button onclick="agregarPedido('Michelada clásica 1 L',80)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <h3>Michelada Cubana</h3>
+                <p>Con clamato • 1 L</p>
+                <span>$95 MXN</span>
+                <button onclick="agregarPedido('Michelada cubana 1 L',95)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <h3>Michelada Mango</h3>
+                <p>Preparada • 1 L</p>
+                <span>$100 MXN</span>
+                <button onclick="agregarPedido('Michelada mango 1 L',100)">Agregar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- COCTELES -->
+    <section>
+        <h2>🍸 Cocteles</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <h3>Mojito</h3>
+                <p>450 ml</p>
+                <span>$120 MXN</span>
+                <button onclick="agregarPedido('Mojito 450 ml',120)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <h3>Pitufo</h3>
+                <p>450 ml</p>
+                <span>$130 MXN</span>
+                <button onclick="agregarPedido('Pitufo 450 ml',130)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <h3>Piña Colada</h3>
+                <p>450 ml</p>
+                <span>$140 MXN</span>
+                <button onclick="agregarPedido('Piña colada 450 ml',140)">Agregar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMIDA -->
+    <section>
+        <h2>🍟 Botanas</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <h3>Papas a la francesa</h3>
+                <p>Orden grande</p>
+                <span>$70 MXN</span>
+                <button onclick="agregarPedido('Papas francesas',70)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <h3>Alitas</h3>
+                <p>10 piezas</p>
+                <span>$150 MXN</span>
+                <button onclick="agregarPedido('Alitas 10 pzas',150)">Agregar</button>
+            </div>
+
+            <div class="card">
+                <h3>Nachos con queso</h3>
+                <p>Orden completa</p>
+                <span>$85 MXN</span>
+                <button onclick="agregarPedido('Nachos con queso',85)">Agregar</button>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
